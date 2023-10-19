@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!--
-    MIS Club Web About Page
+    <!--
+    Management Information Systems Club Page
     Author: Grant Carr
     Date: 09/21/2023
 
@@ -21,15 +21,19 @@
                 <li>
                     <a href="index.html">Home</a>
                     <a href="GCarr_SP1_About.html">About</a>
+                    <a href="GCarr_SP2_Schedual.html">Schedual</a>
                 </li>
             </ul>
             
         </nav> 
-
     </header>
 
         <h1>About Us</h1>
-            <img src="MIS_image_for_wiki.png" alt="">
+            <figure>
+                <img src="MIS_image_for_wiki.png">
+                <figcaption>Fig.1 - Structure of MIS Learning</figcaption>
+                    
+            </figure>
 
             <h2>Knowledge Sharing: </h2>
                 <p>
@@ -70,6 +74,53 @@
                 <p>
                     
                 </p>
+
+            <form id="frmStData" action="https://www.google.com" method="post">
+                <fieldset id="fldStudent">
+                    <legend>Students Sign-up </legend>
+                    <label for="fName">Full Name</label>
+                    <input type="text" id="fName" placeholder="Enter Your Full Name" />
+
+                    <label for="eAddress">Email Address</label>
+                    <input type="text" id="eAddress" placeholder="Enter Your Email Address" />
+
+                    <label for="sDate">DOB</label>
+                    <input type="text" id="sDate " placeholder="xx/xx/xxxx"/>
+
+                    <label for="sZip">DOB</label>
+                    <input type="text" id="sZip " value="68655"/>
+
+                    <label for="Exp">Experience</label>
+                    <textarea id="Exp " cols="50" row="5" placeholder="xx/xx/xxxx" >
+                    
+
+                </fieldset>
+
+                <fieldset id="stuHob">
+                    <legend>Hobbies</legend>
+                    <label for="fav">Favorite Things To do</label>
+                    <select id="fav" size="8" multiple>
+                        <option value="0">Select One</option>
+                        <optgroup label="Sports">
+                            <Option value="Tennis">Tennis</Option>
+                            <Option value="Football">Tennis</Option>
+                            <Option value="Basketball">Tennis</Option>
+                            <Option value="Golf">Tennis</Option>
+                            <Option value="Pickleball">Tennis</Option>
+                            <Option value="HTML">Tennis</Option>
+                        </optgroup>
+                        <optgroup label="Subject">
+                            <Option value="Tennis">Tennis</Option>
+                            <Option value="Football">Tennis</Option>
+                            <Option value="Basketball">Tennis</Option>
+                            <Option value="Golf">Tennis</Option>
+                            <Option value="Pickleball">Tennis</Option>
+                            <Option value="HTML">Tennis</Option>
+                        </optgroup>
+                    </select>
+
+                </fieldset>
+            </form>
 
             <footer>
                 
