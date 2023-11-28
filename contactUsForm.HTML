@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+    Management Information Systems Club Page
+    Author: Grant Carr
+    Date: 11/28/2023
+
+    Filename: contactUsForm.html
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="SP1.css" rel="stylesheet">
+    <link href="SP.css" rel="stylesheet">
     <title>Contact Us</title>
     <script>
         function validateForm() {
-            // Add your validation logic here
-            // Return true if the form is valid, false otherwise
             return true;
         }
 
         function submitForm() {
             if (validateForm()) {
                 if (confirm("Are you sure you want to submit the form?")) {
-                    // Redirect to the thank you page
                     window.location.href = "thankyou.html";
                 }
             }
@@ -24,19 +28,19 @@
 </head>
 <body>
     <header>
-        <!-- Include your navigation menu here -->
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="GCarr_SP1_About.html">About Us</a></li>
-                <li><a href="GCarr_SP2_Schedual.html">Contact Us</a></li>
-                <!-- Add links to other pages as needed -->
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedual.html">Schedual</a></li>
+                <li><a href="contactUsForm.HTML">Contact us</a></li>
             </ul>
-        </nav>
+            
+        </nav> 
     </header>
-
+    <h1>Contact Us</h1>
     <main>
-        <h1>Contact Us</h1>
+        
         <form>
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" required>
@@ -44,20 +48,16 @@
             <label for="lastName">Last Name:</label>
             <input type="text" id="lastName" name="lastName" required>
 
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="Email">Emali:</label>
+            <input type="text" id="email" name="email" required>
 
             <label for="telephone">Telephone:</label>
             <input type="tel" id="telephone" name="telephone" required>
 
-            <!-- Add other form fields as needed -->
 
             <button type="button" onclick="submitForm()">Submit</button>
         </form>
     </main>
 
-    <footer>
-        <!-- Include your footer content here -->
-    </footer>
 </body>
 </html>
